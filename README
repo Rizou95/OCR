@@ -1,0 +1,12 @@
+To run our program you first need to compile it with: make all.
+Then once it all compiled you will have an executable named OCR.
+
+To run it do ./OCR 'path of the image' 'blur_level' 'angle of rotation' 'path of the file to solve' 'number of the function'
+
+    - path of the image is self explanatory.
+    - blur_level is the level of blur applied by the gaussian blur.
+    - angle of rotation is self explanatory.
+    - path of the file to solve is the file with the sudoku in text.
+    - number of the function chose which fonction to run: 1 - solver; 2 - preprocessing; 3 - rotation; 4 - detection; 5 - network XOR
+
+At the end you can do a make clean.
