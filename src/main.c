@@ -197,7 +197,8 @@ gboolean launcher(GtkButton* button, gpointer user_data)
     }
     else
         coloration(ocr->image_surface);
-
+        
+    SDL_SaveBMP(ocr->image_surface, "./tmp/lines.bmp");
     save_image(ocr);
     gtk_progress_bar_set_fraction(GTK_PROGRESS_BAR(ocr->ui->progress_bar), 0.5);
 

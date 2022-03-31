@@ -83,7 +83,7 @@ void coloration(SDL_Surface* imgs){
     int *hmax = malloc(10 * sizeof(int));
     BFS(imgs, wmax);
     DFS(imgs, hmax);
-    /*Uint32 pixel = SDL_MapRGB(imgs->format, 255, 0, 0);
+    Uint32 pixel = SDL_MapRGB(imgs->format, 255, 0, 0);
     for (unsigned i = 0; i < 10; i++){
         for (unsigned j = 0; j < (unsigned)imgs->h; j++){
             put_pixel(imgs, wmax[i], j, pixel);
@@ -93,7 +93,7 @@ void coloration(SDL_Surface* imgs){
         for (unsigned l = 0; l < (unsigned)imgs->w; l++){
             put_pixel(imgs, l, hmax[k], pixel);
         }
-    }*/
+    }
     //Saving each box as an image
     SDL_Rect position;
     SDL_Surface *cell;
